@@ -1,3 +1,30 @@
-body{
-    background-color: rgb(190, 86, 86);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ body{
+    background-size: contain;
+    background: linear-gradient(124.53deg, #FC3F5F 0%, #7D61FF 100.32%) no-repeat;
+  } 
+
+  #root {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  a{
+    text-decoration: none;
+  }
+  h1,h3{
+    margin: 0;
+  }
+  ul, ol {
+  padding: 0;
+  list-style-type: none;
 }

@@ -1,0 +1,100 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 184px;
+    @media (max-width: 1023px) {
+        margin-bottom: 100px;
+        
+    }
+
+    @media (max-width: 767px){
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+    }
+    
+    &__logo{
+        width: 100%;
+    }
+    &__logo-svg{
+        width: 40px;
+        height: 50px;
+        fill: #F2F4F7;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            fill: #A0A3A7;;
+        
+        }
+        
+        @media (max-width: 1023px) {
+            width: 30px;
+            height: 35px;
+            
+        }
+    
+        @media (max-width: 767px){
+            width: 15px;
+            height: 20px;
+        }
+    }
+    &__links{
+        justify-self: center;
+        align-self: center;
+        @media (max-width: 767px){
+            display: none;
+        }
+    }
+    &__link{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #A0A3A7;
+        margin-right: 65px;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover{
+            cursor: pointer;
+            color:#F2F4F7;
+        }
+        &:active {
+            transform: scale(95%);
+            color: #A0A3A7;
+        }
+        @media (max-width: 1023px) {
+            margin-right: 30px;
+            
+        }
+    }
+    &__button--wrapper{
+        align-self: center;
+        justify-self: flex-end;
+        @media (max-width: 767px){
+            display: none;
+        }
+    }
+    &__button{
+        padding: 16px 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        border: none;
+        background: linear-gradient(93.22deg, #E1E1E1 8.37%, #FFFFFF 99.95%);
+        box-shadow: 0px 4px 50px rgba(37, 37, 37, 0.08), inset 1px 1px 1px rgba(135, 135, 135, 0.32);
+        border-radius: 999px;
+        transition: all 0.2s ease-in-out;
+        &:active {
+            transform: scale(95%);
+            
+        }
+        &:hover {
+            background: #ffffff;
+            cursor: pointer;
+            color: #A0A3A7;
+        }
+        @media (max-width: 1023px) {
+           padding: 10px 14px;
+            
+        }
+    }
+
+}
